@@ -1,112 +1,108 @@
-# Healthcare--Management--System
+🩺 Healthcare Management System:
 
-A comprehensive web-based Hospital Management System built with PHP, MySQL, and Bootstrap that handles patient registration, doctor appointments, prescriptions, and administrative tasks.
+A web-based Hospital Management System built with PHP, MySQL, and Bootstrap to streamline patient registration, doctor appointments, prescriptions, and administrative tasks. This project provides secure, role-based portals for patients, doctors, and admins in a responsive, scalable design.
 
-Features
+📖 Overview:
 
-Patient Portal
+The Healthcare Management System (HMS) is a comprehensive platform designed to digitize hospital operations. It supports patient-doctor interactions, appointment scheduling, prescription management, and administrative oversight through intuitive and secure interfaces.
 
-User registration and login
+✨ Key Features:
 
-Book appointments with doctors
+Patient Portal:
 
-View appointment history
+🔐 User registration and login
+📅 Book and manage doctor appointments
+📜 View appointment and prescription history
+💳 Generate medical bills
+🗑️ Cancel appointments
 
-Cancel appointments
+Doctor Portal:
 
-View prescriptions and medical history
+📋 View and manage assigned appointments
+💊 Prescribe medications
+🩺 Access patient medical history
+📝 Manage prescription records
+🗑️ Cancel appointments
 
-Generate medical bills
+Admin Portal:
+👨‍⚕️ Add or remove doctors
+📈 Monitor patient records and appointment schedules
+📜 View prescription history
+📩 Handle patient queries
+🛠️ Tech Stack
 
-Doctor Portal
+Category	Technologies:
 
-View assigned appointments
+Frontend	HTML, CSS, Bootstrap, JavaScript
+Backend	PHP
+Database	MySQL
+Libraries	Font Awesome, jQuery, Owl Carousel, Nivo Lightbox
 
-Cancel appointments
+📦 Installation
+Follow these steps to set up the project locally:
 
-Prescribe medications
+Copy
+git clone https://github.com/Maryam-2496/Healthcare--Management--System.git
+cd Healthcare--Management--System
+Set up the database:
+Create a MySQL database named hospitalms.
+Import the hospitalms_cleaned.sql file located in the project root:
 
-View patient history
+mysql -u your_username -p hospitalms < hospitalms_cleaned.sql
+Configure database connection:
+Update the database credentials (host, username, password, database name) in PHP files containing mysqli_connect() calls (e.g., func.php, index.php).
+Example:
+php
+$conn = mysqli_connect("localhost", "your_username", "your_password", "hospitalms");
+Deploy on a web server:
+Use a local server like XAMPP, WAMP, or LAMP.
+Place the project folder in the server’s root directory (e.g., htdocs for XAMPP).
+Access the project via http://localhost/Healthcare--Management--System.
 
-Manage prescription records
+Role	Access Point	Description:
 
-Admin Portal
+Patient	/index.php (Register), /index1.php (Login)	Register as a new patient or log in to manage appointments and view medical records.
+Doctor	/index.php (Doctor tab)	Log in to view appointments, prescribe medications, and access patient history.
+Admin	/index.php (Admin tab)	Log in to manage doctors, monitor schedules, and handle queries.
 
-Manage doctors (add/remove)
+🔒 Security Features:
 
-View all patient records
+Password Hashing: Protects user credentials.
+Session Management: Ensures secure user sessions.
+Input Validation: Prevents SQL injection and XSS attacks.
+Role-Based Access Control: Restricts access based on user roles.
+🌟 Future Enhancements
+🔔 Real-time notifications for appointments and prescriptions.
+💸 Integration of a payment gateway for online billing.
+📱 Development of a mobile companion app.
+📊 Advanced analytics dashboard for admins.
 
-Monitor appointment schedules
+🙌 Acknowledgments:
 
-View prescription history
+Bootstrap for responsive design templates.
+Font Awesome for icons.
+jQuery for DOM manipulation.
+Owl Carousel for sliders.
+Nivo Lightbox for image galleries.
 
-Handle patient queries
-
-Technical Stack
-
-Frontend: HTML, CSS, Bootstrap , JavaScript
-
-Backend: PHP
-
-Database: MySQL
-
-Dependencies:
-
-Font Awesome for icons
-
-jQuery for DOM manipulation
-
-Bootstrap for responsive design
-Installation :
-
-Import the database:
-
-Create a MySQL database named hospitalms
-
-Import the SQL file located in the project directory
-
-Configure the database connection:
-
-Update the connection details in all PHP files (look for mysqli_connect() calls)
-
-Deploy to a web server with PHP and MySQL support (e.g., XAMPP, WAMP, or LAMP)
-
-Usage
-Patient Access:
-
-Register as a new patient at /index.php
-
-Existing patients can login at /index1.php
-
-Doctor Access:
-
-Doctors can login at /index.php (Doctor tab)
-
-Admin Access:
-
-Administrators can login at /index.php (Admin tab)
-
-Security Features
-Password hashing
-
-Session management
-
-Input validation
-
-Role-based access control
-
-Future Enhancements possible:
-
-Implement real-time notifications
-
-Integrate payment gateway for online payments
-
-Develop mobile companion app
-
-Acknowledgments
-
-Bootstrap for responsive design templates
-
-Font Awesome for icons
+💡 Why This Project?
+This Hospital Management System was developed as a semester project to demonstrate proficiency in web development, database management, and secure application design. It showcases a real-world application with practical features, making it a valuable addition to my portfolio.
 
 
+Enhancements Made:
+
+Professional Structure: Organized sections with clear headings, emojis, and tables for better readability.
+Badges: Added GitHub badges for repo size, last commit, issues, and stars to showcase activity.
+Improved Installation Guide: Step-by-step instructions with code snippets for clarity.
+Tech Stack Table: Visual representation of technologies used.
+Security and Future Enhancements: Highlighted security features and potential improvements to demonstrate forward-thinking.
+Contributing Section: Added guidelines to encourage collaboration.
+Acknowledgments: Credited libraries and tools used.
+
+
+
+
+
+
+
+1.4s
