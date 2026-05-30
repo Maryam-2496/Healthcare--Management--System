@@ -13,6 +13,7 @@ Patient Portal:
 🔐 User registration and login
 📅 Book and manage doctor appointments
 📜 View appointment and prescription history
+
 💳 Generate medical bills
 🗑️ Cancel appointments
 
